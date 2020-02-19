@@ -1,0 +1,120 @@
+baseURL = "https://howtoanything.ca/"
+title = "HowToAnything"
+# for smart copyright line, leave this blank and check [params.copyright]
+copyright = ""
+
+theme = "minimo"
+
+pluralizeListTitles = "False"
+
+publishDir = "docs"
+
+disqusShortname = ""
+googleAnalytics = "UA-122790844-1"
+
+
+Paginate = 5
+preserveTaxonomyNames = true
+
+enableRobotsTXT = true # generate robots.txt
+
+# Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
+pygmentsCodefences = true
+
+# Missing translations will default to this content language
+defaultContentLanguage = "en"
+
+[params.info]
+description = ""
+title404 = "Nothing's here!"
+
+[params.assets]
+favicon = "favicon.ico"
+customCSS = ["css/theme_overrides.css"]
+customJS = ["js/custom.js"]
+gopher = "" # used in 404 template ( Generator: https://gopherize.me )
+
+[params.copyright]
+prefix = ""
+holder = "HowToAnything"
+startYear = "2018"
+suffix = ""
+
+[params.settings]
+# date & time format: https://golang.org/pkg/time/
+dateFormat = "2006, Jan 02"
+listDateFormat = "2006, Jan 02"
+hideEntryNavigation = ["page"] # boolean / array of sections
+recentPostsLength = 4
+hideSocialMenu = false
+showReadingTime = true
+noTermCloudShuffle = false
+
+[params.seo]
+# Title Separator: - – — · • * ⋆ | ~ « » < >
+titleSeparator = "•"
+
+[params.social]
+email = "HowToAnythingPodcast@gmail.com"
+twitter = "HowToAnythingPC"
+
+[params.social.config]
+platforms = ["soundcloud", "email", "reddit", "twitter", "rss"]
+
+
+[[menu.social]]
+name = "rss"
+url = "http://feeds.soundcloud.com/users/soundcloud:users:437448042/sounds.rss"
+
+[[menu.social]]
+name = "gitlab"
+url = "https://gitlab.com/brereton"
+
+[[menu.social]]
+name = "soundcloud"
+url = "https://soundcloud.com/user-495062670"
+
+[[menu.social]]
+name = "reddit"
+url = "https://reddit.com/r/howtoanything"
+
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[permalinks]
+page = "/:slug/"
+
+
+[[menu.main]]
+name = "home"
+weight = -100
+identifier = "home"
+url = "/"
+
+[[menu.main]]
+name = "blog"
+weight = -90
+identifier = "blog"
+url = "/blog"
+
+
+
+
+
+[languages]
+# edit this block for your own language
+[languages.en]
+lang = "en"
+languageName = "English"
+weight = 1
+
+
+
+[params]
+    
+    # Copyright
+    [params.footer.copyright]
+    name = "Andrew, Calvin, and Eliana Brereton"
+
